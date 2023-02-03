@@ -25,7 +25,9 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 #define ACPI_EFI
 #define FDT_EFI
 
+/* Enable IPv6 and HTTPS */
 #define	NET_PROTO_IPV6		/* IPv6 protocol */
+#define	DOWNLOAD_PROTO_HTTPS	/* Secure Hypertext Transfer Protocol */
 
 #define DOWNLOAD_PROTO_FILE	/* Local filesystem access */
 

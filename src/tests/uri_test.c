@@ -953,6 +953,18 @@ static struct uri_params_test uri_named_params = {
 	uri_named_params_list,
 };
 
+/** Invalid named form parameter URI test */
+static struct uri_params_test uri_invalid_named_params = {
+	"http://boot.ipxe.org/register##paramsXfoo",
+	{
+		.scheme = "http",
+		.host = "boot.ipxe.org",
+		.path = "/register",
+	},
+	NULL,
+	uri_named_params_list,
+};
+
 /**
  * Perform URI self-test
  *
@@ -1010,6 +1022,7 @@ static void uri_test_exec ( void ) {
 	/* Request parameter URI tests */
 	uri_params_ok ( &uri_params );
 	uri_params_ok ( &uri_named_params );
+	uri_params_ok ( &uri_invalid_named_params );
 }
 
 /** URI self-test */

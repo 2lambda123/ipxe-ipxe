@@ -81,6 +81,8 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 #define ERRFILE_efi_strings	       ( ERRFILE_CORE | 0x00290000 )
 #define ERRFILE_uuid		       ( ERRFILE_CORE | 0x002a0000 )
 #define ERRFILE_efi_path	       ( ERRFILE_CORE | 0x002b0000 )
+#define ERRFILE_efi_mp		       ( ERRFILE_CORE | 0x002c0000 )
+#define ERRFILE_efi_service	       ( ERRFILE_CORE | 0x002d0000 )
 
 #define ERRFILE_eisa		     ( ERRFILE_DRIVER | 0x00000000 )
 #define ERRFILE_isa		     ( ERRFILE_DRIVER | 0x00010000 )
@@ -221,9 +223,10 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 #define ERRFILE_ice		     ( ERRFILE_DRIVER | 0x00d20000 )
 #define ERRFILE_ecam		     ( ERRFILE_DRIVER | 0x00d30000 )
 #define ERRFILE_pcibridge	     ( ERRFILE_DRIVER | 0x00d40000 )
-#define ERRFILE_aqc1xx		     ( ERRFILE_DRIVER | 0x00d50000 )
-#define ERRFILE_atl_hw		     ( ERRFILE_DRIVER | 0x00d60000 )
-#define ERRFILE_atl2_hw		     ( ERRFILE_DRIVER | 0x00d70000 )
+#define ERRFILE_mnpnet		     ( ERRFILE_DRIVER | 0x00d50000 )
+#define ERRFILE_aqc1xx		     ( ERRFILE_DRIVER | 0x00d60000 )
+#define ERRFILE_atl_hw		     ( ERRFILE_DRIVER | 0x00d70000 )
+#define ERRFILE_atl2_hw		     ( ERRFILE_DRIVER | 0x00d80000 )
 
 
 #define ERRFILE_aoe			( ERRFILE_NET | 0x00000000 )
@@ -417,6 +420,7 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 #define ERRFILE_efi_settings	      ( ERRFILE_OTHER | 0x005e0000 )
 #define ERRFILE_x25519		      ( ERRFILE_OTHER | 0x005f0000 )
 #define ERRFILE_des		      ( ERRFILE_OTHER | 0x00600000 )
+#define ERRFILE_editstring	      ( ERRFILE_OTHER | 0x00610000 )
 
 /** @} */
 

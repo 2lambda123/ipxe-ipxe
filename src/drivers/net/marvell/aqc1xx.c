@@ -2,7 +2,7 @@
  *
  * Marvell AQtion family network card driver.
  *
- * Copyright(C) 2017-2021 Marvell
+ * Copyright(C) 2017-2024 Marvell
  *
  * SPDX-License-Identifier: BSD-2-Clause
  *
@@ -632,6 +632,7 @@ static struct pci_device_id atl_nics[] = {
 	PCI_ROM(0x1D6A, 0x04C0, "AQC13", "Marvell AQtion 10Gbit Network Adapter", ATL_FLAG_A2),
 	PCI_ROM(0x1D6A, 0x14C0, "AQC13", "Marvell AQtion 10Gbit Network Adapter", ATL_FLAG_A2),
 	PCI_ROM(0x1D6A, 0x12C0, "AQC13", "Marvell AQtion 10Gbit Network Adapter", ATL_FLAG_A2),
+	PCI_ROM(0x1D6A, 0x03C0, "AQC14", "Marvell AQtion 5Gbit Network Adapter", ATL_FLAG_A2),
 };
 
 /** Marvell PCI driver */

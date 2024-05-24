@@ -24,7 +24,7 @@ from __future__ import annotations
 import argparse
 from collections import UserDict
 from collections.abc import Sequence, Mapping, MutableMapping
-from dataclasses import dataclass
+from dataclasses import field, dataclass
 from enum import Flag, IntEnum
 import re
 import subprocess
@@ -108,11 +108,11 @@ class Key:
                                            KeyType.LETTER}
     """Key types with direct ASCII values"""
 
-    DEAD_KEYS: ClassVar[Mapping[int, str]] = {
+    DEAD_KEYS: ClassVar[Mapping[int, str]] = field(default_factory=lambda: {
         DeadKey.GRAVE: '`',
         DeadKey.CIRCUMFLEX: '^',
         DeadKey.TILDE: '~',
-    }
+    })
     """Dead key replacement ASCII values"""
 
     @property
